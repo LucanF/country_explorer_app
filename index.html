@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Explorer</title>
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Country Explorer</h1>
+    </header>
+
+    <form id="countryForm">
+        <p id="countryDetails">Please enter a country name to see details.</p>
+        <label for="countryName">Enter a country name:</label>
+        <input type="text" id="countryName" name="countryName" required>
+        <button type="submit">Search</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <section id="countryData">
+        <div class="country-item">
+            <h3>Name</h3>
+            <p id="countryNameDisplay"></p>
+        </div>
+        <div class="country-item">
+            <h3>Capital</h3>
+            <p id="countryCapitalDisplay"></p>
+        </div>
+        <div class="country-item">
+            <h3>Population</h3>
+            <p id="countryPopulationDisplay"></p>
+        </div>
+        <div class="country-item">
+            <h3>Region</h3>
+            <p id="countryRegionDisplay"></p>
+        </div>
+        <div class="country-item">
+            <h3>Languages</h3>
+            <p id="countryLanguagesDisplay"></p>
+        </div>
+        <div class="country-item">
+            <h3>Borders</h3>
+            <p id="countryBordersDisplay"></p>
+        </div>
+        <div class="country-item">
+            <h3>Native Name</h3>
+            <p id="countryNativeNameDisplay"></p>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2023 Country Explorer</p>
+    </footer>
+
+
+
+<script src="./dist/main.js" type="module"></script>
+
+
+</body>
+
+</html>

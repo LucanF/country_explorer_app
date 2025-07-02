@@ -1,0 +1,122 @@
+#countryInfo {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.country-item p {
+  border: solid 1px #ccc;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  font-weight: 600;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+
+#countryData {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+
+  color: rgb(8, 8, 8);
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0f0f3;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #a2d2ff, #cdb4db);
+  filter: blur(100px);
+  opacity: 0.6;
+  animation: move1 20s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+body::after {
+  background: radial-gradient(circle, #ffc8dd, #bde0fe);
+  animation: move2 25s ease-in-out infinite alternate;
+}
+
+@keyframes move1 {
+  0% {
+    top: -200px;
+    left: -200px;
+  }
+  100% {
+    top: 200px;
+    left: 100px;
+  }
+}
+
+@keyframes move2 {
+  0% {
+    bottom: -200px;
+    right: -200px;
+  }
+  100% {
+    bottom: 150px;
+    right: 100px;
+  }
+}
+
+
+
+
