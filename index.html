@@ -43,9 +43,14 @@
     </div>
 
     <section id="countryData">
+        <div class="country-item flag-item">
+            <div id="countryFlagContainer">
+                <img id="countryFlagImage" alt="Country flag">
+            </div>
+        </div>
         <div class="country-item">
-            <h3><i class="fas fa-flag"></i> Name</h3>
-            <p id="countryNameDisplay">-</p>
+            <h3><i class="fas fa-flag"></i> Official Name</h3>
+            <p id="countryOfficialNameDisplay">-</p>
         </div>
         <div class="country-item">
             <h3><i class="fas fa-landmark"></i> Capital</h3>
@@ -58,6 +63,10 @@
         <div class="country-item">
             <h3><i class="fas fa-globe-asia"></i> Region</h3>
             <p id="countryRegionDisplay">-</p>
+        </div>
+        <div class="country-item">
+            <h3><i class="fas fa-globe"></i> Subregion</h3>
+            <p id="countrySubregionDisplay">-</p>
         </div>
         <div class="country-item">
             <h3><i class="fas fa-language"></i> Languages</h3>
@@ -75,9 +84,22 @@
             <h3><i class="fas fa-money-bill-wave"></i> Currency</h3>
             <p id="countryCurrencyDisplay">-</p>
         </div>
+        <div class="country-item">
+            <h3><i class="fas fa-clock"></i> Timezones</h3>
+            <p id="countryTimezonesDisplay">-</p>
+        </div>
+        <div class="country-item">
+            <h3><i class="fas fa-external-link-alt"></i> TLD</h3>
+            <p id="countryTldDisplay">-</p>
+        </div>
     </section>
 
+    <footer>
+        <p>&copy; 2023 Country Explorer | Discover the World</p>
+    </footer>
     
     <script src="./dist/main.js" type="module"></script>
+
+
 </body>
 </html>
